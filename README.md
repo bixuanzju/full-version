@@ -3,9 +3,15 @@
 ## Summary
 
 `FunImpl` is a type checker and interpreter for the dependently typed
-language `Fun` presented in the paper "Type-level Computation One Step
-at a Time". It comes with a read-eval-print loop allowing one to
-fiddle with `Fun`. This is an overview of how to interact.
+language `Fun` presented in the paper "A Simple Yet Expressive
+Calculus for Modern Functional Languages". It comes with a
+read-eval-print loop allowing one to fiddle with `Fun`. This is an
+overview of how to interact.
+
+## Full Version of the Paper ##
+
+[Here](./full-version.pdf)
+
 
 ## Installation ##
 
