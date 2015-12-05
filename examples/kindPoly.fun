@@ -12,4 +12,4 @@ Copy and paste the following definition to REPL
 
 ---- End Comment ----
 
-data Mu (k : *) (f : (k -> *) -> k -> *) (a : k) = Roll (g : (f (Mu k f) a)); data Listf (f : * -> *) (a : *) = Nil | Cons (x : a) (xs : (f a)); let List : * -> * = \a : * . Mu * Listf a in let nil : List nat = Roll * Listf nat (Nil (Mu * Listf) nat) in nil
+data Mu (k : *) (f : (k -> *) -> k -> *) (a : k) = Roll (g : (f (Mu k f) a)); data Listf (f : * -> *) (a : *) = Nil | Cons (x : a) (xs : (f a)); let List : * -> * = \a : * . Mu * Listf a in let nil : List int = Roll * Listf int (Nil (Mu * Listf) int) in nil

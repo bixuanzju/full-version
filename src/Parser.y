@@ -88,7 +88,7 @@ aexp : aexp term                                { App $1 $2 }
      | term                                     { $1 }
 
 term : nat                                      { Nat }
-     | err                                    { Error }
+     | err                                      { Error }
      | id                                       { Var $1 }
      | digits                                   { Lit $1 }
      | '*'                                      { Kind Star }
@@ -165,7 +165,7 @@ lexer symbols keywords = lexer'
         lexSym cs [] = error $ "Cannot tokenize " ++ cs
 
 symbols = [".", "(", ")", ":", "\\", "*", "->", "=>", "[", "]", ";" , "=", "|", "&", "{", "}", ",", "+"]
-keywords = ["fold", "unfold", "pi", "mu", "beta", "let", "letrec", "in", "data", "case", "of", "rcrd", "nat", "error"]
+keywords = ["fold", "unfold", "pi", "mu", "beta", "let", "letrec", "in", "data", "case", "of", "rcrd", "int", "error"]
 
 parseExpr = parser . lexer symbols keywords
 

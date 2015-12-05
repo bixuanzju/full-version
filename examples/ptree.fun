@@ -12,4 +12,4 @@ Copy and paste the following definition to REPL
 
 ---- End Comment ----
 
-data Nat = Z | S (n:Nat); data PTree (n : Nat) = Empty | Fork (z : nat) (x : PTree (S n)) (y : PTree (S n)); Fork Z 1 (Empty (S Z)) (Empty (S Z))
+data Nat = Z | S (n:Nat); data PTree (n : Nat) = Empty | Fork (z : int) (x : PTree (S n)) (y : PTree (S n)); Fork Z 1 (Empty (S Z)) (Empty (S Z))

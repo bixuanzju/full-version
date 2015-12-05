@@ -1492,7 +1492,7 @@ lexer symbols keywords = lexer'
         lexSym cs [] = error $ "Cannot tokenize " ++ cs
 
 symbols = [".", "(", ")", ":", "\\", "*", "->", "=>", "[", "]", ";" , "=", "|", "&", "{", "}", ",", "+"]
-keywords = ["fold", "unfold", "pi", "mu", "beta", "let", "letrec", "in", "data", "case", "of", "rcrd", "nat", "error"]
+keywords = ["fold", "unfold", "pi", "mu", "beta", "let", "letrec", "in", "data", "case", "of", "rcrd", "int", "error"]
 
 parseExpr = parser . lexer symbols keywords
 {-# LINE 1 "templates/GenericTemplate.hs" #-}
